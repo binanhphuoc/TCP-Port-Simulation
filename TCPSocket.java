@@ -8,16 +8,18 @@ import java.util.List;
 public class TCPSocket {
 
     HashMap<Short, TCPThread> threadHashMap;
-    short connectedRouter;
+    short port;
+    short firsthop;
 
-    public TCPSocket(int router)
+    public TCPSocket(int port, int firsthop)
     {
-        connectedRouter = (short) router;
+        this.firsthop = (short) firsthop;
+        this.port = (short) port;
     }
 
     public void run() throws  IOException
     {
-        ServerSocket serv = new ServerSocket(111);
+        ServerSocket serv = new ServerSocket(port);
 
         while (true)
         {
@@ -35,8 +37,14 @@ public class TCPSocket {
         TCPDatagram tcpDatagram = new TCPDatagram();
         tcpDatagram.fromArray(s);
 
-        TCPThread t = new TCPThread(tcpDatagram, threadHashMap);
-        t.start();
+        if (threadHashMap.containsKey(tcpDatagram.SourcePort)) {
+            threadHashMap.get(tcpDatagram.SourcePort).receive(tcpDatagram);
+        }
+        else
+        {
+            TCPThread t = new TCPThread(tcpDatagram, threadHashMap, firsthop);
+            t.start();
+        }
 
     }
 

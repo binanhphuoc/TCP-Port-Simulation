@@ -13,7 +13,7 @@ class Router{
     while (true) {
 
     // Accept the connection
-       Socket connectionSocket = welcomeSocket.accept();
+        Socket connectionSocket = welcomeSocket.accept();
 
         InputStream is = connectionSocket.getInputStream();
         byte[] s = new byte[4096];
