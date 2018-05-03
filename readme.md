@@ -1,12 +1,12 @@
 # IMPLEMENTATION OF TCP
 
--------------------------------------------------------
+
 I. Network layer
 -------------------------------------------------------
 - Use TCP connection to simulate the communication channel of the network layer.
 - There are total 8 routers, 3 agents, 1 Air-force base. Each of them has a its own port number, which acts similar to an IP address.
 
--------------------------------------------------------
+
 II. Network Layer: A Simple Router (with no queue)
 -------------------------------------------------------
 - This project focuses mainly on the end-end communication
@@ -26,7 +26,7 @@ to the next router.
 - The forwarding table may be hardcoded or passed into the
 program using text files.
 
--------------------------------------------------------
+
 III. Network Layer: TCP implementation at Agent
 -------------------------------------------------------
 - The agent is also a server process that always listens
@@ -60,14 +60,14 @@ with another socket on another agent machine.
 types of packet (not SYN), it will pass that packet to
 the appropriate port (e.g 44444) using UDP connection.
 
--------------------------------------------------------
+
 IV. Agent: Server Process Implementation
 -------------------------------------------------------
 
   + Read incoming packet
   +
 
--------------------------------------------------------
+
 V. Agent: Child threads Implementation
 -------------------------------------------------------
 + Checksum
