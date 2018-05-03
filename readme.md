@@ -13,7 +13,7 @@ II. Network Layer: A Simple Router (with no queue)
 between the agents. Therefore, the implementation of the
 routers does not have queues, at least currently.
 - Each router acts as a server which runs a while-loop
-that keeps checking for a (UDP) connection from the
+that keeps checking for a TCP connection from the
 neighboring routers.
 - Routers' connections are usually to pass data packets
 to the next router.
@@ -23,9 +23,17 @@ to the next router.
   + Check the destination port against the forwarding table
   + Send the packet through the correct port
   + Log the transaction
-- The forwarding table may be hardcoded or passed into the
-program using text files.
+- The forwarding table data for Router X is in file
 
+```
+./Routers/X.txt
+```
+
+- For more information about the format of data, please check:
+
+```
+./Routers/readme.md
+```
 
 III. Network Layer: TCP implementation at Agent
 -------------------------------------------------------
