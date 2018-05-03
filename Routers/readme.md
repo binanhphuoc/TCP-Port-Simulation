@@ -31,3 +31,7 @@ Dest Node | Shortest Distance | Full Path
 ----------|-------------------|-----------------------
     Y     |       25          | X -> A -> B -> C -> Y
 ```
+
+### When to use
+
+We will use the data from X.txt in the code for Router X.
