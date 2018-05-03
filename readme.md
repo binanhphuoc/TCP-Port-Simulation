@@ -1,6 +1,6 @@
 # IMPLEMENTATION OF TCP
 
--------------------------------------------------------
+
 I. Network layer
 -------------------------------------------------------
 - Use UDP connection (instead of TCP) to simulate the
