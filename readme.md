@@ -1,13 +1,10 @@
 # IMPLEMENTATION OF TCP
 
-
+-------------------------------------------------------
 I. Network layer
-
-- Use UDP connection (instead of TCP) to simulate the
-unreliable channel of the network layer.
-- There are total 8 routers, 3 agents, 1 Air-force base.
-Each of them has a its own port number, which acts similar
-to an IP address.
+-------------------------------------------------------
+- Use TCP connection to simulate the communication channel of the network layer.
+- There are total 8 routers, 3 agents, 1 Air-force base. Each of them has a its own port number, which acts similar to an IP address.
 
 -------------------------------------------------------
 II. Network Layer: A Simple Router (with no queue)
