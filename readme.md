@@ -2,7 +2,7 @@
 
 
 I. Network layer
--------------------------------------------------------
+
 - Use UDP connection (instead of TCP) to simulate the
 unreliable channel of the network layer.
 - There are total 8 routers, 3 agents, 1 Air-force base.
