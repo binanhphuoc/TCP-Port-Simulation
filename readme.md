@@ -1,5 +1,6 @@
 # IMPLEMENTATION OF TCP
 
+Language: Java
 
 I. Network layer
 -------------------------------------------------------
@@ -17,11 +18,27 @@ that keeps checking for a TCP connection from the
 neighboring routers.
 - Routers' connections are usually to pass data packets
 to the next router.
+- Each router will have its own PortNo. We assign each router a random number, as long as these PortNo's are known by other routers in the network.
 - Thus, the while loop repeats the following steps:
   + Listen for a connection
-  + Receive the packet
-  + Check the destination port against the forwarding table
-  + Send the packet through the correct port
+  + Receive the packet on a connection
+  + The packet contains a TCP Datagram. Check the destination port in the datagram against the forwarding table. The TCP Datagram can be extracted to get a specific header using TCPDatagram class. E.g:
+  
+      ```
+      byte[] s = new byte[4096];
+      
+      Socket connectionSocket = welcomeSocket.accept();
+      InputStream is = connectionSocket.getInputStream();
+      is.read(s);
+      
+      TCPDatagram tcpDatagram = new TCPDatagram();
+      tcpDatagram.fromArray(s);
+      System.out.println("Source Address Port " + tcpDatagram.SourcePort);
+      System.out.println("Dest Port " + tcpDatagram.DestPort);
+      System.out.println(tcpDatagram.data);
+      ```
+      
+  + Send the packet through the port found in the previous step
   + Log the transaction
 - The forwarding table data for Router X is in file
 
