@@ -1,0 +1,12 @@
+A 7 Chan E A 
+B 11 Chan E A B 
+C 10 Chan E A C 
+D 15 Chan E G D 
+E 0 Chan E 
+F 21 Chan E A B L F 
+G 5 Chan E G 
+H 21 Chan E A B L F Jan H 
+L 16 Chan E A B L 
+Ann 7 Chan E A Ann 
+Chan 0 Chan 
+Jan 21 Chan E A B L F Jan 
