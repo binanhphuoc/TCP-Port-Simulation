@@ -6,7 +6,7 @@ public class Ann {
 
     public static void main(String[] args) throws IOException
     {
-        TCPSocketServer server = new TCPSocketServer(1111, 11111);
+        TCPServerSocket server = new TCPServerSocket(1111, 11111);
         try{
             server.run();
         }
