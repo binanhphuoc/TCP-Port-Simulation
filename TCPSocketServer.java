@@ -7,14 +7,15 @@ import java.util.List;
 
 public class TCPSocketServer {
 
-    HashMap<Short, TCPThread> threadHashMap;
-    short port;
-    short firsthop;
+    HashMap<Integer, TCPThread> threadHashMap;
+    int port;
+    int firsthop;
+
 
     public TCPSocketServer(int port, int firsthop)
     {
-        this.firsthop = (short) firsthop;
-        this.port = (short) port;
+        this.firsthop = firsthop;
+        this.port = port;
     }
 
     public void run() throws  IOException

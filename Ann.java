@@ -4,9 +4,9 @@ import java.net.Socket;
 
 public class Ann {
 
-    public static void main(String[] args)
+    public static void main(String[] args) throws IOException
     {
-        TCPSocketServer server = new TCPSocketServer(111, 1111);
+        TCPSocketServer server = new TCPSocketServer(1111, 11111);
         try{
             server.run();
         }
