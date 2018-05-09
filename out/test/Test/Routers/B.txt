@@ -1,0 +1,12 @@
+A 4 B A 
+B 0 B 
+C 6 B C 
+D 14 B L D 
+E 11 B A E 
+F 10 B L F 
+G 16 B A E G 
+H 10 B L F Jan H 
+L 5 B L 
+Ann 4 B A Ann 
+Chan 11 B A E Chan 
+Jan 10 B L F Jan 

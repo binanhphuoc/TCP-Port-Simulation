@@ -1,0 +1,17 @@
+A B 4
+A C 3
+A E 7
+A Ann 0
+B C 6
+B L 5
+C D 11
+D L 9
+D F 6
+D G 10
+E Chan 0
+E G 5
+F L 5
+F Jan 0
+Jan H 0
+END OF INPUT
+

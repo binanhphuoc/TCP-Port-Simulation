@@ -1,0 +1,12 @@
+A 14 D C A 
+B 14 D L B 
+C 11 D C 
+D 0 D 
+E 15 D G E 
+F 6 D F 
+G 10 D G 
+H 6 D F Jan H 
+L 9 D L 
+Ann 14 D C A Ann 
+Chan 15 D G E Chan 
+Jan 6 D F Jan 

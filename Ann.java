@@ -6,7 +6,7 @@ public class Ann {
 
     public static void main(String[] args)
     {
-        TCPSocket server = new TCPSocket(111);
+        TCPSocketServer server = new TCPSocketServer(111, 1111);
         try{
             server.run();
         }

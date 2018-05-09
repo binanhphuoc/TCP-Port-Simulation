@@ -1,0 +1,12 @@
+A 14 H Jan F L B A 
+B 10 H Jan F L B 
+C 16 H Jan F L B C 
+D 6 H Jan F D 
+E 21 H Jan F D G E 
+F 0 H Jan F 
+G 16 H Jan F D G 
+H 0 H 
+L 5 H Jan F L 
+Ann 14 H Jan F L B A Ann 
+Chan 21 H Jan F D G E Chan 
+Jan 0 H Jan 
